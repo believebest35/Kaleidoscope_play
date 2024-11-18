@@ -217,7 +217,7 @@ static std::unique_ptr<FunctionAST> ParseDefinition() {
 
 /// external ::= 'extern' prototype
 static std::unique_ptr<PrototypeAST> ParseExtern() {
-  GetNextToken();  // eat extern.
+  GetNextToken(); // eat extern.
   return ParsePrototype();
 }
 
@@ -282,5 +282,3 @@ static void MainLoop() {
     }
   }
 }
-
-
